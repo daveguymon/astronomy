@@ -1,0 +1,6 @@
+
+<ul>
+  <% AstronomyApi.categories.each do |category| %>
+    <li><%= link_to category, category.downcase.pluralize.gsub(' ', '_') %></li>
+  <% end %>
+</ul>

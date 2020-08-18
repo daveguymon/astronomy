@@ -1,0 +1,2 @@
+class ScaffoldController < ApplicationController
+end
