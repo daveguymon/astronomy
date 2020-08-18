@@ -1,3 +1,5 @@
 class ClustersController < ApplicationController
-  @clusters = AstronomyApi.topics('Cluster')
+  def index
+    @clusters = AstronomyApi.topics('Cluster')
+  end
 end
