@@ -1,5 +1,16 @@
+<div class="content-container" style="max-width: 60vw; margin: auto;">
 <h1><%= name %></h1>
 
-<% object.each do |cat| %>
-  <%= cat["name"] %>
-<% end %>
+<div class="cards-container ml-5 mr-5">
+  <% object.each do |cat| %>
+    <div class="card bg-light mb-3" style="min-width: 18rem;">
+      <div class="card-header"><%= name %></div>
+      <div class="card-body">
+        <h5 class="card-title"><%= cat["name"] %></h5>
+        <p class="card-text"><%= cat["description"] %></p>
+        <p><%= link_to 'Wikipedia Entry', 'https://en.wikipedia.org/wiki/' + cat["name"].titleize.gsub(' ', '_') %></p>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>

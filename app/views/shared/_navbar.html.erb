@@ -1,0 +1,7 @@
+<ul class="nav flex-column navbar-dark bg-dark", style="height: 100vh; min-width: 10vw; position: fixed;">
+  <% AstronomyApi.categories.each do |category| %>
+    <li class="nav-item navbar-brand" style="height: 4vh; color: white !important;">
+      <%= link_to category, category.downcase.pluralize.gsub(' ', '_'), :class => "nav-link" %>
+    </li>
+  <% end%>
+</ul>
