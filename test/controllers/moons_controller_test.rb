@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class PlanetsControllerTest < ActionDispatch::IntegrationTest
+class MoonsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get planets_index_url
+    get moons_index_url
     assert_response :success
   end
 
