@@ -34,6 +34,9 @@ gem 'bootstrap', '~> 4.0'
 gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 # Astronomy API
 gem 'astronomy', '~> 0.2.8'
+# Automates interaction with websites
+gem 'mechanize', '~> 2.7', '>= 2.7.6'
+gem 'pry'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
